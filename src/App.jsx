@@ -11,7 +11,7 @@ function changeButtonPos(){
   let Y = Math.floor((Math.random() * 600) + 1);
 
   // button.style.transform  = `translate(${X}px, ${Y}px)`
-  button.setAttribute('disabled', '')
+  //button.setAttribute('disabled', '')
   button.style.position  = `absolute`
   button.style.left  = `${X}px`
   button.style.top  = `${Y}px`
@@ -38,7 +38,7 @@ function App() {
 
         <div id='buttons'>
           <button onClick={()=>setYes(true)} className="button-9" role="button">Sim</button>
-          <button onMouseOver={()=>changeButtonPos()} className="button-9 no" role="button" id='no'>Não</button>
+          <button onMouseOver={()=>changeButtonPos()} onClick={()=>changeButtonPos()} className="button-9 no" role="button" id='no'>Não</button>
         </div>
 
       </main>
