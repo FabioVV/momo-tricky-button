@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Teddy from './assets/teddy.jpg'
 import gif from './assets/g.gif'
 
 import './App.css'
